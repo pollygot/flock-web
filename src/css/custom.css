@@ -64,6 +64,3 @@ p, strong, a, li {
   letter-spacing: 0.03rem;
   padding-top: 4px;
 }
-.navbar__logo path {
-    fill: blue !important;
-}
