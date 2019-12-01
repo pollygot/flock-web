@@ -15,41 +15,48 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Single point of entry</>,
+    imageUrl: "img/undraw_directions_x53j.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Use your favourite RESTful library, rather than installing many
+        third-party libraries.
       </>
-    ),
+    )
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Extended features</>,
+    imageUrl: "img/undraw_Stability_ball_b4ia.svg",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Convenience functions for extending some services (for example, bulk
+        sending of messages).
       </>
-    ),
+    )
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Mocks and Tests</>,
+    imageUrl: "img/undraw_personal_settings_kihd.svg",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Mock & test responses for testing your code without triggering expensive
+        services.
       </>
-    ),
+    )
   },
+  {
+    title: <>Well documented</>,
+    imageUrl: "img/undraw_right_places_h9n3.svg",
+    description: (
+      <>Standardized interface for communicating with many services.</>
+    )
+  }
 ];
 
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames("col text--center", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -67,18 +74,20 @@ function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      description="Description will go into a meta tag in <head />"
+    >
+      <header className={classnames("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">One API, many services.</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                "button button--outline button--secondary button--lg",
+                styles.getStarted
               )}
-              to={useBaseUrl('docs/doc1')}>
+              to={useBaseUrl("docs/doc1")}
+            >
               Get Started
             </Link>
           </div>

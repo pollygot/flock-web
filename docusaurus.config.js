@@ -22,10 +22,10 @@ module.exports = {
         src: "img/logo.svg"
       },
       links: [
-        { to: "docs/doc1", label: "Docs", position: "left" },
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "docs/doc1", label: "Docs", position: "right" },
+        { to: "blog", label: "Blog", position: "right" },
         {
-          href: "https://github.com/flock/flock",
+          href: "https://github.com/pollygot/flock",
           label: "GitHub",
           position: "right"
         }
@@ -33,41 +33,41 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Docs",
-              to: "docs/doc1"
-            }
-          ]
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            }
-          ]
-        },
-        {
-          title: "Social",
-          items: [
-            {
-              label: "Blog",
-              to: "blog"
-            }
-          ]
-        }
-      ],
-      logo: {
-        alt: "Flock",
-        src: "/img/logo-white.svg",
-        // href: "https://opensource.facebook.com/"
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Flock.`
+      // links: [
+      //   {
+      //     title: "Docs",
+      //     items: [
+      //       {
+      //         label: "Docs",
+      //         to: "docs/doc1"
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Community",
+      //     items: [
+      //       {
+      //         label: "Discord",
+      //         href: "https://discordapp.com/invite/docusaurus"
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Social",
+      //     items: [
+      //       {
+      //         label: "Blog",
+      //         to: "blog"
+      //       }
+      //     ]
+      //   }
+      // ],
+      // logo: {
+      //   alt: "Flock",
+      //   src: "/img/logo-white.svg",
+      //   // href: "https://opensource.facebook.com/"
+      // },
+      copyright: `Copyright © ${new Date().getFullYear()} Pollygot.`
     }
   },
   presets: [

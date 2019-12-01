@@ -12,14 +12,19 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700&display=swap');
+
+
+
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #3ECF8E;
+  --ifm-color-primary-dark: #38BC81;
+  --ifm-color-primary-darker: #1C8656;
+  --ifm-color-primary-darkest: #1C8656;
+  --ifm-color-primary-light: #65D9A5;
+  --ifm-color-primary-lighter: #9FE7C7;
+  --ifm-color-primary-lightest: #C5F1DD;
 }
 
 .docusaurus-highlight-code-line {
@@ -27,4 +32,17 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Rajdhani, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+p, strong, a, li {
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+.button--lg {
+  text-transform: uppercase;
 }
