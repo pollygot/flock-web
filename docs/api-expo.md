@@ -5,7 +5,9 @@ title: Expo
 
 A RESTful API for interacting with [Expo](https://expo.io).
 
-##  Push Notifications
+## Send a Push Notifications
+
+### Endpoint
 
 ### Getting started
 
