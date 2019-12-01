@@ -7,7 +7,14 @@
 
 module.exports = {
   docs: {
-    "Introduction": ['about', 'getting-started', 'testing'],
-    "API": ['expo'],
-  },
+    Introduction: ["about", "getting-started", "testing"],
+    API: [
+      "api-expo", 
+      "api-facebook",
+      "api-mailgun",
+      "api-nexmo",
+      "api-slack",
+      "api-twilio",
+    ]
+  }
 };

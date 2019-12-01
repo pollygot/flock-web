@@ -16,11 +16,11 @@ module.exports = {
   projectName: "flock", // Usually your repo name.
   themeConfig: {
     navbar: {
-      // title: 'My Site',
-      logo: {
-        alt: "Flock",
-        src: "img/logo.svg"
-      },
+      title: 'flock',
+      // logo: {
+      //   alt: "Flock",
+      //   src: "img/logo.svg"
+      // },
       links: [
         { to: "docs/about", label: "Docs", position: "right" },
         // { to: "blog", label: "Blog", position: "right" },

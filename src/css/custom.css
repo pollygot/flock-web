@@ -55,3 +55,15 @@ p, strong, a, li {
 .button--lg {
   text-transform: uppercase;
 }
+
+.navbar__brand strong {
+  font-family: Rajdhani, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  padding-top: 4px;
+}
+.navbar__logo path {
+    fill: blue !important;
+}

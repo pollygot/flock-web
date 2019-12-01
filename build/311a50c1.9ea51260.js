@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{141:function(o){o.exports=JSON.parse('{"id":"expo","title":"Expo","description":"A RESTful API for interacting with [Expo](https://expo.io).","source":"@site/docs/api-expo.md","permalink":"/docs/expo","sidebar":"docs","previous":{"title":"Testing","permalink":"/docs/testing"}}')}}]);
