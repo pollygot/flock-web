@@ -73,20 +73,20 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title}`}
+      description="All of your external systems in one easy to use RESTful API."
     >
-      <header className={classnames("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
+      <header className={classnames("hero", styles.heroBanner)}>
+        <div className="container text--left">
           <h1 className="hero__title">One API, many services.</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                "button button--outline button--secondary button--lg",
+                "button button--outline button--lg button--secondary",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/doc1")}
+              to={useBaseUrl("docs/about")}
             >
               Get Started
             </Link>
