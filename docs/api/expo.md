@@ -1,5 +1,5 @@
 ---
-id: api-expo
+id: expo
 title: Expo
 ---
 

@@ -1,5 +1,5 @@
 ---
-id: api-slack
+id: slack
 title: Slack
 ---
 

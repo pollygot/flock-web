@@ -6,15 +6,26 @@
  */
 
 module.exports = {
-  docs: {
-    Introduction: ["about", "getting-started", "testing"],
-    API: [
-      "api-expo", 
-      "api-facebook",
-      "api-mailgun",
-      "api-nexmo",
-      "api-slack",
-      "api-twilio",
-    ]
-  }
+  docs: [
+    {
+      type: "category",
+      label: "Introduction",
+      items: ["about"]
+    },
+    {
+      type: "category",
+      label: "API",
+      items: [
+        "api/getting-started",
+        "api/authentication",
+        "api/testing",
+        "api/expo",
+        "api/facebook",
+        "api/mailgun",
+        "api/nexmo",
+        "api/slack",
+        "api/twilio"
+      ]
+    }
+  ]
 };

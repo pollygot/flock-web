@@ -1,5 +1,5 @@
 ---
-id: api-nexmo
+id: nexmo
 title: Nexmo
 ---
 

@@ -15,14 +15,16 @@ module.exports = {
   projectName: "flock", // Usually your repo name.
   themeConfig: {
     navbar: {
+      style: "dark",
       title: "flock",
       // logo: {
       //   alt: "Flock",
-      //   src: "img/logo.svg"
+      //   src: "img/logo.svg",
+        // darkSrc: 'img/logo-dark.svg'
       // },
       links: [
-        { to: "docs/about", label: "Docs", position: "right" },l
-        { to: "guides", label: "Guides", position: "right" },
+        { to: "docs/about", label: "Docs", position: "right" },
+        { to: "blog", label: "Guides", position: "right" },
         {
           href: "https://github.com/pollygot/flock",
           label: "GitHub",

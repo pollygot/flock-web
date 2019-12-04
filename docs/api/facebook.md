@@ -1,5 +1,5 @@
 ---
-id: api-facebook
+id: facebook
 title: Facebook
 ---
 

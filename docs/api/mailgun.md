@@ -1,5 +1,5 @@
 ---
-id: api-mailgun
+id: mailgun
 title: Mailgun
 ---
 
