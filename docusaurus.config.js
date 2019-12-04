@@ -7,23 +7,22 @@
 
 module.exports = {
   title: "Flock",
-  tagline:
-    "All of your external systems in one easy to use RESTful API.",
+  tagline: "All of your external systems in one easy to use RESTful API.",
   url: "https://flock.rest",
   baseUrl: "/",
   favicon: "favicon.ico",
-  organizationName: "Flock", // Usually your GitHub org/user name.
+  organizationName: "pollygot", // Usually your GitHub org/user name.
   projectName: "flock", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'flock',
+      title: "flock",
       // logo: {
       //   alt: "Flock",
       //   src: "img/logo.svg"
       // },
       links: [
-        { to: "docs/about", label: "Docs", position: "right" },
-        // { to: "blog", label: "Blog", position: "right" },
+        { to: "docs/about", label: "Docs", position: "right" },l
+        { to: "guides", label: "Guides", position: "right" },
         {
           href: "https://github.com/pollygot/flock",
           label: "GitHub",
