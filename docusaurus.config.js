@@ -34,7 +34,7 @@ module.exports = {
     },
     prism: {
       // https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes
-      theme: require('prism-react-renderer/themes/vsdark'),
+      // theme: require('prism-react-renderer/themes/vsdark'),
       // darkTheme: require('prism-react-renderer/themes/dracula'),
     },
     footer: {
