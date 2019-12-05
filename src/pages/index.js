@@ -76,7 +76,7 @@ function Home() {
       title={`${siteConfig.title}`}
       description="All of your external systems in one easy to use RESTful API."
     >
-      <header className={classnames("hero", styles.heroBanner)}>
+      <header className={classnames("hero shadow--md", styles.heroBanner)}>
         <div className="container text--left">
           <h1 className="hero__title">One API, many services.</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>

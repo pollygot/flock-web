@@ -15,7 +15,7 @@ module.exports = {
   projectName: "flock", // Usually your repo name.
   themeConfig: {
     navbar: {
-      style: "dark",
+      classNames: "shadow--md",
       title: "flock",
       // logo: {
       //   alt: "Flock",
@@ -32,8 +32,12 @@ module.exports = {
         }
       ]
     },
+    prism: {
+      // https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes
+      theme: require('prism-react-renderer/themes/vsdark'),
+      // darkTheme: require('prism-react-renderer/themes/dracula'),
+    },
     footer: {
-      style: "dark",
       // links: [
       //   {
       //     title: "Docs",

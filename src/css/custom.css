@@ -1,21 +1,18 @@
 /**
- * Copyright (c) 2017-present, Facebook, Inc.
+ * Root variables
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * Override the default Infima variables here. These values cascade down to
+ * the rest of the elements.
  */
 
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700&display=swap');
 
-:root { 
+:root {
+  /* Colors */
+  --ifm-color-black: #000;
+
+  /* Primary */
   --ifm-color-primary-darkest: #000;
   --ifm-color-primary-darker: #0b0b0b;
   --ifm-color-primary-dark: #151515;
@@ -23,13 +20,102 @@
   --ifm-color-primary-light: #222;
   --ifm-color-primary-lighter: #333;
   --ifm-color-primary-lightest: #444;
-} 
 
-html[data-theme=dark] { 
-  --ifm-color-primary: #3ECF8E;
-  --ifm-color-primary-dark: #38BC81;
+  /* Fonts */
+  --ifm-font-family-base: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --ifm-font-family-monospace: "Source Code Pro", Menlo, monospace;
+  --ifm-heading-font-family: Rajdhani, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+  /* Globals */
+  --ifm-global-shadow-md: 0 3px 5px 0px rgba(0,0,0,0.1);
+  
+  /* Navbar */
+  --ifm-navbar-background-color: var(--ifm-background-color);
+
+  /* Footer */
+  --ifm-footer-background-color: var(--ifm-background-color);
+
+  /* Hero */
+  --ifm-hero-background-color: var(--ifm-background-color);
+
+
+  /* 
+   --ifm-background-color: white;
+  --ifm-background-color-rgb: 255, 255, 255;
+  --ifm-background-surface-color: var(--ifm-panel-background);
+  --ifm-badge-border-radius: 0.25em;
+  --ifm-blockquote-color: var(--ifm-color-primary-lighter);
+  --ifm-code-background: var(--ifm-color-emphasis-50);
+  --ifm-code-font-size: 85%;
+  --ifm-color-blue: #3084ff;
+  --ifm-color-blue-rgb: 48, 132 ,255;
+  --ifm-color-content: var(--ifm-color-emphasis-800);
+  --ifm-color-content-secondary: var(--ifm-color-emphasis-400);
+  --ifm-color-danger: #ff1178;
+  --ifm-color-danger-rgb: 255, 17, 120;
+  --ifm-color-emphasis-25: var(--ifm-color-gray-25);
+  --ifm-color-emphasis-40: var(--ifm-color-gray-40);
+  --ifm-color-emphasis-50: var(--ifm-color-gray-50);
+  --ifm-color-emphasis-75: var(--ifm-color-gray-75);
+  --ifm-color-gray-25: rgba(0, 27, 61, 0.025);
+  --ifm-color-gray-40: rgba(0, 27, 61, 0.04);
+  --ifm-color-gray-50: rgba(0, 27, 61, 0.05);
+  --ifm-color-gray-75: rgba(0, 27, 61, 0.075);
+  --ifm-color-gray-100: rgba(0, 27, 61, 0.1);
+  --ifm-color-gray-150: rgba(0, 27, 61, 0.15);
+  --ifm-color-gray-200: rgba(0, 27, 61, 0.2);
+  --ifm-color-gray-300: rgba(0, 27, 61, 0.3);
+  --ifm-color-gray-400: rgba(0, 27, 61, 0.4);
+  --ifm-color-gray-500: rgba(0, 27, 61, 0.5);
+  --ifm-color-gray-600: rgba(0, 27, 61, 0.6);
+  --ifm-color-gray-700: rgba(0, 27, 61, 0.7);
+  --ifm-color-gray-800: rgba(0, 27, 61, 0.8);
+  --ifm-color-gray-900: rgba(0, 27, 61, 0.9);
+  --ifm-color-pink: #f44af5;
+  --ifm-color-pink-rgb: 244, 74 ,245;
+  --ifm-color-secondary: var(--ifm-color-emphasis-100);
+  --ifm-color-success-rgb: 0, 77, 0;
+  --ifm-color-warning-rgb: 255, 186, 0;
+  --ifm-contents-border-color: var(--ifm-color-emphasis-75);
+  --ifm-contents-padding-left: var(--ifm-spacing-horizontal);
+  --ifm-font-size-base: 16px;
+  --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 4);
+  --ifm-h2-font-size: 2em;
+  --ifm-heading-color: #001B3D;
+  --ifm-heading-margin-bottom: calc( var(--ifm-spacing-vertical) * 3 );
+  --ifm-hero-text-color: var(--ifm-color-content);
+  --ifm-hr-border-color: var(--ifm-contents-border-color);
+  --ifm-leading: calc(var(--ifm-leading-desktop) * 1em);
+  --ifm-line-height-base: 1.7;
+  --ifm-menu-color: var(--ifm-color-emphasis-600);
+  --ifm-navbar-link-color: var(--ifm-heading-color);
+  --ifm-panel-background: var(--ifm-color-emphasis-50);
+  --ifm-panel-background-rgb: 249, 249, 250;
+  --ifm-panel-background-solid: #f9f9fa;
+  --ifm-panel-background-active: rgba( var(--ifm-color-primary-rgb), 0.2 );
+  --ifm-panel-border-color: var(--ifm-hr-border-color);
+  --ifm-panel-border-color-active: var(--ifm-color-primary);
+  --ifm-panel-box-shadow: none;
+  --ifm-panel-box-shadow-active: var(--ifm-panel-box-shadow);
+  --ifm-panel-color: var(--ifm-color-emphasis-800);
+  --ifm-panel-color-active: var(--ifm-color-primary);
+  --ifm-pre-line-height: var(--ifm-line-height-base);
+  --ifm-sidebar-background: var(--ifm-background-color);
+  --ifm-sidebar-border-color: var(--ifm-hr-border-color);
+  --ifm-table-stripe-background: var(--ifm-table-background); */
+}
+
+html[data-theme=dark] {
+
+  --ifm-background-color: #1f1f1f;
+  --ifm-global-shadow-md: 0 3px 5px 0px rgba(0,0,0,0.3);
+
+  --ifm-color-primary-darkest: #10633E;
   --ifm-color-primary-darker: #1C8656;
-  --ifm-color-primary-darkest: #1C8656;
+  --ifm-color-primary-dark: #38BC81;
+  --ifm-color-primary: #3ECF8E;
   --ifm-color-primary-light: #65D9A5;
   --ifm-color-primary-lighter: #9FE7C7;
   --ifm-color-primary-lightest: #C5F1DD;
@@ -45,15 +131,14 @@ html[data-theme=dark] {
 
 h1, h2, h3, h4, h5, h6, 
 .button, .hero__subtitle, 
+a.navbar__item,
 ul.menu__list a.menu__link,
+ul.menu__list .title,
 ul.contents a.contents__link {
   font-family: Rajdhani, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
-p, strong, a, li  {
-  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-}
+
 .button--lg {
   text-transform: uppercase;
 }
@@ -65,4 +150,11 @@ p, strong, a, li  {
   font-weight: 700;
   letter-spacing: 0.03rem;
   padding-top: 4px;
+}
+
+.navbar, .main-wrapper {
+  box-shadow: var(--ifm-global-shadow-md);
+}
+.main-wrapper {
+  z-index: 1;
 }
