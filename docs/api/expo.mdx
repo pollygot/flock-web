@@ -3,28 +3,73 @@ id: expo
 title: Expo
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 A RESTful API for interacting with [Expo](https://expo.io).
 
 ## Send a Push Notifications
 
-### Endpoint
+#### Endpoint
 
-### Getting started
-
-```js
-{
-  "payload": {
-    "to": "ExponentPushToken[...]", 
-    "title": "...",
-    "body": "..."
-  }
-}
+```
+https://api.flock.rest/expo/push/send
 ```
 
-##  Options
+#### Example
 
+Sending to a single user or to a batch of user.
+
+<Tabs
+  defaultValue="curl"
+  values={[
+    { label: 'CURL', value: 'curl', },
+    { label: 'JS', value: 'js', },
+  ]
+}>
+<TabItem value="curl">
+
+```bash
+curl \
+  -d '{
+    "title": "Hotdog?", 
+    "body": "Not hot dog.",
+    "to": [ "ExponentPushToken[...]", "ExponentPushToken[...]" ]
+  }' \
+  https://api.flock.rest/expo/push/send
+```
+
+</TabItem>
+<TabItem value="js">
 
 ```js
+import Expo from '@pollygot/flock/Expo'
+
+// Prepare the payload
+const tokens = [ "ExponentPushToken[...]", "ExponentPushToken[...]" ]
+const payload = {
+  tokens,
+  title: 'Hotdog?',  
+  body: 'Not hot dog.' 
+}
+
+// Send
+const result = await Expo.sendPush(payload)
+```
+
+</TabItem>
+</Tabs>
+
+#### Options
+
+
+<!---
+your comment goes here
+and here
+-->
+
+```js {4}
 {
   "payload": { 
     // Required
