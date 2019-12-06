@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{165:function(e){e.exports=JSON.parse('{"permalink":"/blog/nexmo","source":"@site/blog/2019-05-30-nexmo.md","description":"Learn how to send SMS messages with Flock + Nexmo","date":"2019-05-30T00:00:00.000Z","tags":[{"label":"nexmo","permalink":"/blog/tags/nexmo"}],"title":"Flock + Nexmo"}')}}]);
